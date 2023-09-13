@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv=""X-UA-Compatible" content=""IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- SEO -->
+	<title>hyoeng&#39;s Portfolio</title>
+	<meta 
+		name="description"
+		content="Portfolio for hyoeng" 
+	/>
+	<meta name="hyoeng" content="hyoyoung" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- Open Graph (OG) 웹사이트에 풍부한 내용을 추가해줌 -->
+	<meta property="og:title" content="hyoeng의 포트폴리오"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="배포후 생성된 url"/>
+	<meta property="og:image" content="배포후에 생성된 이미지 url"/>
+	<!-- MDN web docs에서 필요한 정보 더 찾아보는걸로 해보자. -->
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link 
+		href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet"
+	>
+	<!-- Font Awesome -->
+	<script 
+		src="https://kit.fontawesome.com/2c0ac4d8c5.js" 
+		crossorigin="anonymous">
+	</script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Javascript -->
+	<script type="module" src="src/main.js" defer></script>
+	<script type="module" src="src/projects.js" defer></script>	
+</head>
+<body>
+	<!-- Header -->
+	<header class="header">
+		<div class="header__logo">
+			<img class="header__logo__img" src="images/favicon.ico" alt="logo"/>
+			<h1 class="header__logo__title"><a href="#">Null0RM</a></h1>
+		</div>
+		<nav class="header__nav">
+			<ul class="header__menu">
+				<li><a class="header__menu__item active"href="#home">Home</a></li>
+				<li><a class="header__menu__item"href="#about">About</a></li>
+				<li><a class="header__menu__item"href="#skills">Skills</a></li>
+				<li><a class="header__menu__item"href="#works">My work</a></li>
+				<li><a class="header__menu__item"href="#testimonial">Testimonial</a></li>
+				<li><a class="header__menu__item"href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<button class="header__toggle" aria-label="navgation menu toggle">
+			<i class="fa-solid fa-bars"></i>
+		</button>
+	</header>
+	<!-- Main -->
+	<main>
+		<!-- Home -->
+		<section id="home">
+			<div class="home__container">
+				<img class="home__profilephoto" src="images/favicon.ico" alt="hyojung's profile">
+				<h2 class="home__title">Hello<br /> I&#39;m <strong class="home__title--strong">... Coder</strong>, Null0RM</h2>
+				<p class="home__description">A software engineer currently residing in Seoul, Korea</p>
+				<a class="home__contact" href="#contact">Contact Me</a>
+			</div>
+		</section>
+		<!-- About -->
+		<section id="about" class="section max-container">
+			<h2 class="title">About me</h2>
+			<p class="descripion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem saepe vel aspernatur expedita assumenda commodi corrupti, sint delectus eligendi. Nam omnis quisquam doloremque voluptatem, vero necessitatibus eaque dolores sapiente?</p>
+			<ul class="majors">
+				<li class="major">
+					<i class="fa-solid fa-code major__icon"></i>
+					<p class="major__title">Algorithm</p>
+					<p>C, C++, Python</p>
+				</li>
+				<li class="major">
+					<i class="fa-brands fa-html5 major__icon"></i>
+					<p class="major__title">Front-end</p>
+					<p>HTML, CSS, Javascript</p>
+				</li>
+				<li class="major">
+					<i class="fa-solid fa-shield-halved major__icon"></i>
+					<p class="major__title">Security</p>
+					<p>Reversing, Pwnable, digital-forensic, crypto</p>
+				</li>
+			</ul>
+			<ul class="jobs">
+				<li class="job">
+					<img class="job__img" src="images/고려대학교_logo.png" alt="Korea Univ">
+					<div>
+						<p class="job__name">department of smartsecurity at Korea Univ.</p>
+						<p class="job__period">2022 March - Until now</p>
+					</div>
+				</li>
+				<li class="job">
+					<img class="job__img" src="images/42_logo.png" alt="ecole 42">
+					<div>
+						<p class="job__name">42 Seoul Cadet &lt;Level 1&gt;</p>
+						<p class="job__period">2023 March - Until now</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<!-- Skills -->
+		<section id="skills" class="section">
+			<div class="max-container">
+				<h2 class="title">My Skills</h2>
+				<p class="description">Skills & Attributes</p>
+				<p>These are my skills and tools that I can use.</p>
+				<div class="skills-container ">
+					<section class="skills__coding">
+						<h3 class="skills__title">Coding Skills</h3>
+						<ul>
+							<li class="bar">
+								<div class="bar__metadata">
+									<span>C</span><span>95%</span>
+								</div>
+								<div class="bar__bg">
+									<div class="bar__value" style="width: 95%"></div>
+								</div>
+							</li>
+							<li class="bar">
+								<div class="bar__metadata">
+									<span>C++</span><span>80%</span>
+								</div>
+								<div class="bar__bg">
+									<div class="bar__value" style="width: 80%"></div>
+								</div>
+							</li>
+							<li class="bar">
+								<div class="bar__metadata">
+									<span>Python</span><span>80%</span>
+								</div>
+								<div class="bar__bg">
+									<div class="bar__value" style="width: 80%"></div>
+								</div>
+							</li>
+							<li class="bar">
+								<div class="bar__metadata">
+									<span>HTML</span><span>70%</span>
+								</div>
+								<div class="bar__bg">
+									<div class="bar__value" style="width: 70%"></div>
+								</div>
+							</li>
+							<li class="bar">
+								<div class="bar__metadata">
+									<span>CSS</span><span>60%</span>
+								</div>
+								<div class="bar__bg">
+									<div class="bar__value" style="width: 60%"></div>
+								</div>
+							</li>
+							<li class="bar">
+								<div class="bar__metadata">
+									<span>Javascript</span><span>50%</span>
+								</div>
+								<div class="bar__bg">
+									<div class="bar__value" style="width: 50%"></div>
+								</div>
+							</li>
+						</ul>
+					</section>
+					<section class="skills__tools">
+						<h3 class="skills__title">Tools</h3>
+						<ul>
+							<li>Visual Studio Code</li>
+							<li>IDA freeware 7.7</li>
+							<li>Autopsy</li>
+						</ul>
+					</section>
+					<section class="skills__etc">
+						<h3 class="skills__title">Etc</h3>
+						<ul>
+							<li>Git</li>
+							<li>solved.ac</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</section>
+		<!-- Work -->
+		<section id="work" class="section">
+			<div class="max-container">
+				<h2 class="title">My Work</h2>
+				<p class="description">Projects</p>
+				<ul class="categories">
+					<li><button class="category category--selected" data-filter="all">All <span class="category__count">5</span></button></li>
+					<li><button class="category" data-filter="42Seoul">42Seoul<span class="category__count">5</span></button></li>
+					<li><button class="category" data-filter="Front-end">Front-end <span class="category__count">0</span></button></li>
+					<li><button class="category" data-filter="Security">Security <span class="category__count">0</span></button></li>
+				</ul>
+				<ul class="projects">
+					<li class="project" data-type="42Seoul"><a href="https://github.com/Null0RM/hyojung/tree/master/libft" target="_blank">
+							<img src="images/42__projects/libft.png" alt="libft" class="project__img">
+							<div class="project__metadata">
+								<h3 class="project__title">Libft</h3>
+								<p>This project is about coding a C library</p>
+							</div>
+						</a></li>
+					<li class="project" data-type="42Seoul">
+						<a href="https://github.com/Null0RM/hyojung/tree/master/ft_printf" target="_blank">
+							<img src="images/42__projects/ft_printf.png" alt="ft_printf" class="project__img">
+							<div class="project__metadata">
+								<h3 class="project__title">Ft_printf</h3>
+								<p>This project is about to re-code printf()</p>
+							</div>
+						</a>
+					</li>
+					<li class="project" data-type="42Seoul">
+						<a href="https://github.com/Null0RM/hyojung/tree/master/get_next_line/seseo_refactoring" target="_blank">
+							<img src="images/42__projects/get_next_line.png" alt="get_next_line" class="project__img">
+							<div class="project__metadata">
+								<h3 class="project__title">Get Next Line</h3>
+								<p>This project is about programming a function that returns a line read from a file descriptor</p>
+							</div>
+						</a>
+					</li>
+					<li class="project" data-type="42Seoul">
+						<a href="#" target="_blank">
+							<img src="images/42__projects/born2beroot.png" alt="born to be root" class="project__img">
+							<div class="project__metadata">
+								<h3 class="project__title">Born2beroot</h3>
+								<p>You can create your first virtual machine under specific instructions</p>
+							</div>
+						</a>
+					</li>
+					<li class="project" data-type="42Seoul">
+						<a href="#" target="_blank">
+							<img src="images/42__projects/push_swap.png" alt="push_swap" class="project__img">
+							<div class="project__metadata">
+								<h3 class="project__title">Push Swap</h3>
+								<p>In progress</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- Testimonials -->
+		<section id="testimonial" class="section max-container">
+			<h2 class="title">testimonials</h2>
+			<p class="description">See what they say about me</p>
+			<ul class="testimonials">
+				<li class="testimonial">
+					<img src="images/portfolio_other_images_bce4acb2e3/elli/testimonials/people1.webp" alt="people1"
+						class="testimonial__img">
+					<div class="testimonial__bubble">
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore numquam vero illo temporibus dolorum ab accusantium quis suscipit, commodi, tempore ad. Recusandae nam laudantium voluptatem maiores ipsam amet! Laborum, repudiandae.</p>
+						<p><a href="#asd" class="testimonial__bubble__name">James Kim</a> /Google</p>
+					</div>
+				</li>
+				<li class="testimonial">
+					<img src="images/portfolio_other_images_bce4acb2e3/elli/testimonials/people2.webp" alt="people2" class="testimonial__img">
+					<div class="testimonial__bubble">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsa distinctio rem deserunt! Deleniti, similique distinctio. Quam vel ea aliquam, voluptate doloribus autem sit consectetur possimus eligendi perferendis qui. Ipsam.</p>
+						<p><a href="#asdasd" class="testimonial__bubble__name">hello world</a> /ecole42</p>
+					</div>
+				</li>
+				<li class="testimonial">
+					<img src="images/portfolio_other_images_bce4acb2e3/elli/testimonials/people3.webp" alt="people3" class="testimonial__img">
+					<div class="testimonial__bubble">
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem eius porro distinctio sequi. Qui sed dolor obcaecati, sapiente ad non, assumenda minima itaque natus quam accusamus, nemo soluta. Eos, quisquam.</p>
+						<p><a href="#qwqewqew" class="testimonial__bubble__name">AAAA</a> /Korea Univ</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<!-- Arrow up -->
+		<aside>
+			<a class="arrow-up" href="#home" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
+		</aside>
+	</main>
+	<!-- Footer -->
+	<footer id="contact" class="section">
+		<div class="max-container">
+			<h2 class="title">Let&#39;s talk</h2>
+			<p class="description">jhy_2301@naver.com</p>
+			<ul class="contact__links">
+				<li><a class="contact__link" href="https://github.com/Null0RM" title="my github link" target="_blank"><i
+							class="fa-brands fa-github"></i></a></li>
+				<li><a class="contact__link" href="https://instagram.com/imhyo._.0" title="my instagram link" target="_blank"><i
+							class="fa-brands fa-instagram"></i></a></li>
+			</ul>
+			<p>©Null0RM Coding portfolio - All rights reserved</p>
+		</div>
+	</footer>
+</body>	
+</html>
